@@ -15,6 +15,7 @@ app.use("/topic",Topic);
 
 let a = '';
 let b=10;
+let cdcs="";
 sequelize
   .sync()
   .then(() => {
