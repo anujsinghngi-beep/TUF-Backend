@@ -3,6 +3,7 @@ const { createTopic, getAllTopics, getAllTopicsWithoutOrm } = require("../Contro
 const { authMiddleware } = require("../Middlewares/authMiddleware");
 const router = express.Router();
 
+
 router.route("/create").post(authMiddleware,createTopic);
 router.route("/all").post(authMiddleware,getAllTopicsWithoutOrm)
 

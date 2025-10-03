@@ -11,8 +11,10 @@ const Topic = require("./Routers/TopicRoute");
 
 app.use(express.json());
 app.use("/user", User);
-app.use("/topic",Topic)
+app.use("/topic",Topic);
 
+let a = '';
+let b=10;
 sequelize
   .sync()
   .then(() => {
