@@ -7,11 +7,13 @@ const port = process.env.port || 5000;
 
 const User = require("./Routers/UserRouter");
 const Topic = require("./Routers/TopicRoute");
+const SubCategory = require("./Routers/SubCategoryRoute");
 
 
 app.use(express.json());
 app.use("/user", User);
 app.use("/topic",Topic);
+app.use('/subCategory', SubCategory);
 
 let a = '';
 
