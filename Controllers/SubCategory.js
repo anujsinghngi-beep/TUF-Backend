@@ -18,7 +18,7 @@ const { Subcategory } = require('../Models/SubCategory');
         });
 
     } catch (error) {
-        console.log("Error while creating the sub-category",error);
+        console.log("Error while creating the sub-category.....",error);
         return res.status(400).json({
             Error:error
         });
